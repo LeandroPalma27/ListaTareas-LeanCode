@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-principal">
+        <div class="container-title">
+            <h2 class="title">¿Que rayos hacer hoy?</h2>
+        </div>
+        <div class="container-body">
+            <div class="body_input-tarea">
+                <input type="text" placeholder="Ingresa alguna tarea..." id="txtTareas" maxlength="56">
+            </div>
+            <div class="body_lista-tarea">
+                <div class="background-tareas">
+                    <!-- <div class="tarea">
+                        <span class="tarea-check"><i class="fas fa-check-circle"></i></span>
+                        <p class="tarea-content">Todo 1</p>
+                        <span class="tarea-eliminar"><i class="fas fa-times"></i></span>
+                    </div> -->
+                </div>
+            </div>
+            <div class="body_opciones-tarea">
+                <div class="opciones-tarea_info">
+                    <section class="info-pendientes">
+                        <span class="pendientes">0</span><span>pendientes</span>
+                    </section>
+                </div>
+                <div class="opciones-tarea_buttons">
+                    <div class="buttons-1">
+                        <button class="btn btn-link link" id="btnGeneral">General</button>
+                        <button class="btn btn-link link" id="btnCompletados">Completados</button>
+                        <button class="btn btn-link link" id="btnPendientes">Pendientes</button>
+                    </div>
+                    <div class="buttons-2">
+                        <button class="btn btn-danger big" id="btnBorrarTerminados">Borrar terminados</button>
+                    </div>
+                    <!-- <button class="btn btn-danger big">Borrar terminados</button> -->
+                </div>
+            </div>
+        </div>
+        <div class="container-footer">
+            <footer>
+                <div></div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

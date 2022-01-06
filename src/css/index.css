@@ -1,0 +1,314 @@
+
+/* Importacion de la fuente para el titulo principal */
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+.container-principal {
+    width: 370px;
+    height: 100vh;
+    margin: auto;
+}
+
+.container-title {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.title {
+    margin: 0;
+    color: rgb(197, 32, 32);
+    font-size: 2.4rem;
+    font-family: 'Dongle', sans-serif;
+    font-weight: bold;
+}
+
+.container-body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(36, 36, 36);
+    -webkit-box-shadow: 7px 6px 16px 1px #181818;
+    box-shadow: 7px 6px 16px 1px #181818;
+    padding: 10px;
+}
+
+.container-footer {
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+.body_input-tarea {
+    width: 100%;
+    display: flex; 
+}
+
+.body_input-tarea input {
+    width: 350px;
+    height: 40px;
+    margin: auto;
+    padding: 0 20px;
+    margin-bottom: 4px;
+}
+
+.body_input-tarea input:focus {
+    outline: none;
+}
+
+.body_input-tarea input::placeholder {
+    font-style: italic;
+    font-size: 1em;
+}
+
+.background-tareas {
+    background-color: rgb(221, 221, 221);
+}
+
+.body_lista-tarea .tarea {
+    width: (100% - 20px);
+    height: 50px;
+    background-color: #fff;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.tarea .tarea-content {
+    position: absolute;
+    left: 45px;
+    overflow: auto;
+    width: 225px;
+    height: auto;
+}
+
+.tarea .tarea-content .tarea-id {
+    opacity: 0;
+    color: rgba(255, 255, 255, 0);
+    font-size: 1px;
+}
+
+
+.tarea .tarea-check {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    border-radius: 16px;
+    border: 1px dotted rgb(165, 165, 165);
+}
+
+.tarea .tarea-check svg {
+    width: 16px;
+    height: 16px;
+}
+
+.tarea span svg{
+    opacity: 0;
+    transition: all 0.1s;
+}
+
+.tarea:hover span .fa-times {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* .tarea span .fa-check-circle {
+    opacity: 0;
+} */
+
+.tarea span .fa-check-circle {
+    cursor: pointer;
+    opacity: 0;
+}
+
+.tarea .active .fa-check-circle {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.tarea .tarea-eliminar {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.body_lista-tarea .tarea p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.body_opciones-tarea {
+    width: (100% - 20px);
+    height: 50px;
+    background-color: #fff;
+    border-top: 1px solid rgb(221, 221, 221);
+    display: flex;
+    flex-direction: row;
+}
+
+.opciones-tarea_info {
+    width: 32%;
+    border-right: 1px solid rgb(221, 221, 221);
+}
+
+.info-pendientes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.info-pendientes span {
+    font-size: 13px;
+}
+
+.pendientes {
+    padding-right: 4px;
+    font-weight: bold;
+}
+
+.opciones-tarea_buttons {
+    width: 68%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.opciones-tarea_buttons .buttons-1, .buttons-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-2 {
+    margin-top: 2px;
+}
+
+.opciones-tarea_buttons button {
+    width: 65px;
+    height: 20px;
+    margin: 0 2px;
+    font-size: 10px;
+    padding: 0;
+}
+
+.link {
+    color: #181818;
+    text-decoration: none;
+}
+
+.link:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.big:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.opciones-tarea_buttons .big {
+    width: 120px;
+    height: 17px;
+}
+
+@media (min-height: 1080px) {
+
+    .container-principal {
+        width: 420px;
+        height: 100vh;
+        margin: auto;
+    }
+
+    .body_input-tarea input {
+        width: 400px;
+        height: 40px;
+        margin: auto;
+        padding: 0 20px;
+        margin-bottom: 4px;
+    }
+
+}
+
+@media (max-height: 660px) {
+
+    .container-principal {
+        width: 340px;
+        height: 100vh;
+        margin: auto;
+    }
+
+    .body_input-tarea input {
+        width: 320px;
+        height: 40px;
+        margin: auto;
+        padding: 0 20px;
+        margin-bottom: 4px;
+    }
+
+}
+
+@media (max-width: 280px) {
+
+    .container-principal {
+        width: 270px;
+        height: 100vh;
+        margin: auto;
+    }
+
+    .body_input-tarea input {
+        width: 250px;
+        height: 40px;
+        margin: auto;
+        padding: 0 20px;
+        margin-bottom: 4px;
+    }
+
+    .info-pendientes span {
+        font-size: 10px;
+    }
+
+    .tarea .tarea-content {
+        position: absolute;
+        left: 45px;
+        overflow: auto;
+        width: 170px;
+        height: auto;
+    }
+
+    .body_lista-tarea .tarea p {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .body_input-tarea input::placeholder {
+        font-style: italic;
+        font-size: 15.5px;
+    }
+
+    .title {
+        margin: 0;
+        color: rgb(197, 32, 32);
+        font-size: 1.5em;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+}
